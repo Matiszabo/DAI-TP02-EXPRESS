@@ -39,8 +39,28 @@ app.get("/validarfecha/:ano/:mes/:dia", (req, res) => {
     let num1 = parseInt(req.query.num1);
     let num2 = parseInt(req.query.num2);
     let resultado= sumar(num1,num2);
-    res.status(200).send(resultado);
-    
+    res.status(200).send(resultado.toString());
+});
+
+app.get("/matematica/restar", (req, res) => {
+    let num1 = parseInt(req.query.num1);
+    let num2 = parseInt(req.query.num2);
+    let resultado= resta(num1,num2);
+    res.status(200).send(resultado.toString());
+});
+
+app.get("/matematica/multiplicar", (req, res) => {
+    let num1 = parseInt(req.query.num1);
+    let num2 = parseInt(req.query.num2);
+    let resultado= multiplicar(num1,num2);
+    res.status(200).send(resultado.toString());
+});
+
+app.get("/matematica/dividir", (req, res) => {
+    let num1 = parseInt(req.query.num1);
+    let num2 = parseInt(req.query.num2);
+    let resultado= dividir(num1,num2);
+    res.status(200).send(resultado.toString());  
 });
 
 //Inicio el Server y lo pongo a escuchar.

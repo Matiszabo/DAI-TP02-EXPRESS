@@ -42,7 +42,29 @@
 					"name": "Multiplicar",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/matematica/multiplicar?num1=2&num2=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"matematica",
+								"multiplicar"
+							],
+							"query": [
+								{
+									"key": "num1",
+									"value": "2"
+								},
+								{
+									"key": "num2",
+									"value": "10"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -50,7 +72,29 @@
 					"name": "Restar",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/matematica/restar?num1=2&num2=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"matematica",
+								"restar"
+							],
+							"query": [
+								{
+									"key": "num1",
+									"value": "2"
+								},
+								{
+									"key": "num2",
+									"value": "10"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -58,7 +102,29 @@
 					"name": "Dividir",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/matematica/dividir?num1=12&num2=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"matematica",
+								"dividir"
+							],
+							"query": [
+								{
+									"key": "num1",
+									"value": "12"
+								},
+								{
+									"key": "num2",
+									"value": "2"
+								}
+							]
+						}
 					},
 					"response": []
 				}
