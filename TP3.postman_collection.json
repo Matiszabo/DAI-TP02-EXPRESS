@@ -131,6 +131,41 @@
 			]
 		},
 		{
+			"name": "OMDB WRAPPER",
+			"item": [
+				{
+					"name": "SearchByPage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/omdb/searchbypage?search=cars&p=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"omdb",
+								"searchbypage"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "cars"
+								},
+								{
+									"key": "p",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "Respondiendo",
 			"request": {
 				"method": "GET",

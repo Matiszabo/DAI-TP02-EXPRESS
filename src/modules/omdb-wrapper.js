@@ -1,13 +1,13 @@
 import axios from "axios";
 const APIKEY = "f9531a82";
 
-const OMDBSearchByPage = async (searchText, page = 1) => {
+const OMDBSearchByPage = async (searchText, p = 1) => {
     let returnObject = {
         respuesta: false,
         cantidadTotal: 0,
         datos: {}
     };
-    const requestString = `http://www.omdbapi.com/?apikey=${APIKEY}&s=${searchText}&page=${page}`;
+    const requestString = `http://www.omdbapi.com/?apikey=${APIKEY}&s=${searchText}&page=${p}`;
     try{
         const apiResponse = await axios.get(requestString);
         returnObject.datos          = apiResponse.data.Search;
@@ -61,3 +61,4 @@ const OMDBGetByImdbID = async (imdbID) => {
     };
 
 export { OMDBSearchByPage, OMDBSearchComplete, OMDBGetByImdbID };
+
