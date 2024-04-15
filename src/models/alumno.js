@@ -10,4 +10,5 @@ class Alumno {
     }
 }
 
-export default Alumno;
+export default Alumno ;
+
